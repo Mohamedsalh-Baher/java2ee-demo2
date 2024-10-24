@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-
+// test
 public class Product {
     private String prod_id;
     private String prod_name;
