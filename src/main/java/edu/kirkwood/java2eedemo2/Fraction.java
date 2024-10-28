@@ -1,5 +1,5 @@
 package edu.kirkwood.java2eedemo2;
-// Fraction
+//
 public class Fraction {
     private int numerator;
     private int denominator;
