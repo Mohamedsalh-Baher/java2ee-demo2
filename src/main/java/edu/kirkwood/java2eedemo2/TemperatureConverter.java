@@ -7,37 +7,39 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(value = "/temp-converter")
 public class TemperatureConverter extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("temperature.jsp").forward(request, response);
+    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String fahrenheitStr = request.getParameter("fahrenheit");
-        double fahrenheit;
-        String resultMessage;
+        String resultMessage = null;
+        String errorMessage = null;
 
-        // Validate input
         try {
-            fahrenheit = Double.parseDouble(fahrenheitStr);
+            double fahrenheit = Double.parseDouble(fahrenheitStr);
             if (fahrenheit < -459.67) {
-                resultMessage = "Temperature must be -459.67 or higher.";
+                errorMessage = "Temperature must be -459.67°F or higher.";
             } else {
                 double celsius = (fahrenheit - 32) * 5.0 / 9.0;
-                resultMessage = String.format(
-                        "(%.1f°F - 32) × 5/9 = %.1f°C", fahrenheit, celsius);
+                resultMessage = String.format("(%.1f°F - 32) × 5/9 = %.1f°C", fahrenheit, celsius);
             }
         } catch (NumberFormatException e) {
-            resultMessage = "Invalid temperature.";
+            errorMessage = "Invalid temperature. Please enter a numeric value.";
         }
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>Conversion Result</h1>");
-        out.println("<p>" + resultMessage + "</p>");
-        out.println("<a href='index.jsp'>Back to Index</a>");
-        out.println("</body></html>");
+        request.setAttribute("resultMessage", resultMessage);
+        request.setAttribute("errorMessage", errorMessage);
+
+        request.getRequestDispatcher("temperature.jsp").forward(request, response);
     }
 }
+
 
