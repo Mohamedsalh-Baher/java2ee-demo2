@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-//Cylinder
+
 import edu.kirkwood.shard.Helpers;
 
 public class Cylinder {
