@@ -23,13 +23,10 @@
                         <h4>${product.prod_name}</h4>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">${product.prod_desc}</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-body-secondary">9 mins</small>
+                            <small class="text-body-secondary"><fmt:formatNumber value="${product.prod_price}" type="currency" /></small>
+                            <a href="add-to-cart?prod_id=${product.prod_id}" class="btn btn-sm btn-outline-primary">Add to Cart</a>
                         </div>
                     </div><%-- Closing card-body --%>
                 </div><%-- Closing card --%>
@@ -37,8 +34,6 @@
         </c:forEach>
     </div><%-- Closing row --%>
 </div><%-- Closing container --%>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

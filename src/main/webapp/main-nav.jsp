@@ -14,6 +14,9 @@
             <li><a class="dropdown-item" href="hello-servlet">Hello Servlet</a></li>
             <li><a class="dropdown-item" href="my-calculator">My Calculator</a></li>
             <li><a class="dropdown-item" href="fraction">Fraction Calculator</a></li>
+            <li><a class="dropdown-item" href="convert2">Inch To Millimeter</a></li>
+            <li><a class="dropdown-item" href="convert">Convert</a></li>
+            <li><a class="dropdown-item" href="temp-converter">Temp Convert</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

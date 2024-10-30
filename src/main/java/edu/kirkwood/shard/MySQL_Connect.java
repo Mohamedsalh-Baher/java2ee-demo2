@@ -15,6 +15,7 @@ public class MySQL_Connect {
         try {
             Class.forName(driver);
         } catch(ClassNotFoundException e) {
+            e.printStackTrace();
             throw new RuntimeException("DB driver not found");
         }
         try {
