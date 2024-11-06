@@ -19,6 +19,13 @@
             <li><a class="dropdown-item" href="temp-converter">Temp Convert</a></li>
           </ul>
         </li>
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          personal peoject
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="patient">patient</a></li>
+        </ul>
+        </li>
         <li class="nav-item dropdown">
           <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Weeks 8-9

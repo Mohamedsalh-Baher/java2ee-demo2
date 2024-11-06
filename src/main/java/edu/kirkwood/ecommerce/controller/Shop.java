@@ -1,4 +1,5 @@
 package edu.kirkwood.ecommerce.controller;
+// shop
 import edu.kirkwood.ecommerce.model.Product;
 import edu.kirkwood.ecommerce.model.ProductDAO;
 import jakarta.servlet.ServletException;
