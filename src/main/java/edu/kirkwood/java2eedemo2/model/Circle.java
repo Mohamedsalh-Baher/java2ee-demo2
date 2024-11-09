@@ -1,5 +1,5 @@
-package edu.kirkwood.ecommerce.model;
-// Circle
+package edu.kirkwood.java2eedemo2.model;
+
 
 public class Circle {
     private double radius;

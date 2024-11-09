@@ -1,5 +1,5 @@
-package edu.kirkwood.ecommerce.model;
-
+package edu.kirkwood.java2eedemo2.model;
+//
 import edu.kirkwood.shard.Helpers;
 
 public class Cylinder {

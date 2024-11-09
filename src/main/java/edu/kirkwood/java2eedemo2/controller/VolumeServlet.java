@@ -1,6 +1,6 @@
-package edu.kirkwood.ecommerce.controller;
-
-import edu.kirkwood.ecommerce.model.Cylinder;
+package edu.kirkwood.java2eedemo2.controller;
+//
+import edu.kirkwood.java2eedemo2.model.Cylinder;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

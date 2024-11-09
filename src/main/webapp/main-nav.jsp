@@ -12,6 +12,9 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="hello-servlet">Hello Servlet</a></li>
+            <a href="/volume">Cylinder Volume Calculator</a>
+            <li><a class="dropdown-item" href="cylinder">Cylinder</a></li>
+            <li><a class="dropdown-item" href="circle">circler</a></li>
             <li><a class="dropdown-item" href="my-calculator">My Calculator</a></li>
             <li><a class="dropdown-item" href="fraction">Fraction Calculator</a></li>
             <li><a class="dropdown-item" href="convert2">Inch To Millimeter</a></li>
