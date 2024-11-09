@@ -1,5 +1,6 @@
-package edu.kirkwood.ecommerce.model;
+package edu.kirkwood.java2eedemo2;
 
+import edu.kirkwood.java2eedemo2.model.Cylinder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -44,7 +45,6 @@ class CylinderTest {
         cylinder1 = new Cylinder(3.0, 4.0);
         assertEquals(113.09733552923255, cylinder1.getVolume(), 1e-9, "Volume should be calculated correctly for radius 3 and height 4");
 
-        // Test volume for cylinder2 initialized with radius 5 and height 10
         assertEquals(785.3981633974483, cylinder2.getVolume(), 1e-9, "Volume should be calculated correctly for radius 5 and height 10");
     }
 

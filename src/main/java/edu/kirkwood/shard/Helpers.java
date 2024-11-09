@@ -1,5 +1,7 @@
 package edu.kirkwood.shard;
 
+import org.jsoup.Jsoup;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -12,7 +14,12 @@ public class Helpers {
 //        decimalFormat.setRoundingMode(RoundingMode.HALF_UP);
 //        return decimalFormat.format(number); // Step 4: Format the decimal number as a string and return it.
         BigDecimal bigDecimal = new BigDecimal(Double.toString(number));
-        bigDecimal = bigDecimal.setScale(numDecPlaces, RoundingMode.HALF_UP);
+        bigDecimal = bigDecimal.setScale(numDecPlaces, RoundingMode.HALF_UP).stripTrailingZeros();
         return bigDecimal.toString();
+
+    }
+
+    public static String html2text(String html) {
+        return Jsoup.parse(html).text();
     }
 }
