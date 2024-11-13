@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-// Product DAO class
+
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;

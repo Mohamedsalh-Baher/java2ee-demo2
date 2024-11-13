@@ -26,17 +26,15 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items="${orders}" var="order">
-                <tr>
-                    <td>
-                        <a href="edit-order?order_id=${order.order_num}" class="btn btn-sm btn-outline-primary">Edit</a>
-                        <a href="delete-order?order_id=${order.order_num}" class="btn btn-sm btn-outline-danger">Delete</a>
-                    </td>
-                    <td class="text-end">${order.order_date}</td>
-                    <td><a href="view-customer?cust_id=${order.vend_id}">${order.cust_name}</a></td>
-                    <td></td>
-                </tr>
-            </c:forEach>
+            <tr>
+                <td>
+                    <a href="edit-order?order_id=${order.order_num}" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <a href="delete-order?order_id=${order.order_num}" class="btn btn-sm btn-outline-danger">Delete</a>
+                </td>
+                <td class="text-end">${order.order_date}</td>
+                <td><a href="view-customer?cust_id=${order.vend_id}">${order.cust_name}</a></td>
+                <td></td>
+            </tr>
             </tbody>
         </table>
     </div>

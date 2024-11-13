@@ -1,6 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-
-// Order
+//
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,11 +12,11 @@ import static edu.kirkwood.shard.MySQL_Connect.getConnection;
 
 public class OrderDAO {
     public static void main(String[] args) {
-        getOrders().forEach(System.out::println);
+        getOrdersAdmin().forEach(System.out::println);
     }
 
     // Get orders for customer view
-    public static List<Order> getOrders() {
+    public static List<Order> getOrdersAdmin() {
         List<Order> orders = new ArrayList<>();
         try(Connection connection = getConnection()) {
             CallableStatement statement = connection.prepareCall("{CALL sp_get_all_orders_admin()}");
