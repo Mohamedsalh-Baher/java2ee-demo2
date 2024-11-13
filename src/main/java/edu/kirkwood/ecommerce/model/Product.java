@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-// Product
+// Product class
 public class Product {
     private String prod_id;
     private String prod_name;
