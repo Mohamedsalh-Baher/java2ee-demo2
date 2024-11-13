@@ -1,5 +1,5 @@
 package edu.kirkwood.java2eedemo2;
-
+//
 
 public class Circle {
     private double radius;

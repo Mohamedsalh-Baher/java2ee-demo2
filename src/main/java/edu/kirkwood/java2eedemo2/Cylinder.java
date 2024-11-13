@@ -1,6 +1,5 @@
 package edu.kirkwood.java2eedemo2;
-
-
+//
 import edu.kirkwood.shard.Helpers;
 
 public class Cylinder {
