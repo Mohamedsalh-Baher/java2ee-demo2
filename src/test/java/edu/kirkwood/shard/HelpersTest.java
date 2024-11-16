@@ -15,4 +15,11 @@ class HelpersTest {
         assertEquals("1.5", Helpers.round(1.54,1));
         assertEquals("1.6", Helpers.round(1.55,1));;
     }
+    @Test
+    void testRemoveHtml() {
+        assertEquals("Hello World", Helpers.removeHtml("<p>Hello World</p>"));
+        assertEquals("Test", Helpers.removeHtml("<b>Test</b>"));
+        assertEquals("", Helpers.removeHtml("<html></html>"));
+        assertEquals("No Tags", Helpers.removeHtml("No Tags"));
+    }
 }
