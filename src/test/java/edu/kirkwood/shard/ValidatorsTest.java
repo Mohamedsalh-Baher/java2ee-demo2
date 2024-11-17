@@ -20,5 +20,7 @@ class ValidatorsTest {
         assertFalse(Validators.isValidEmail("missing@domain"));
         assertFalse(Validators.isValidEmail("user@.com"));
     }
-  
+    @Test
+    void isANumber() {
+    }
 }

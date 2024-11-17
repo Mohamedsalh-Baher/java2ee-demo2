@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-// Order
+// Order class
 import java.time.Instant;
 //
 public class Order {
