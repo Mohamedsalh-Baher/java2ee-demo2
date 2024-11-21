@@ -1,7 +1,7 @@
 package edu.kirkwood.ecommerce.model;
-// Order class
-import java.time.Instant;
 //
+import java.time.Instant;
+
 public class Order {
     private int order_num;
     private Instant order_date;

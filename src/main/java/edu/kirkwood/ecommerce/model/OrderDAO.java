@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-//DAO
+//
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static edu.kirkwood.shard.MySQL_Connect.getConnection;
+
 
 public class OrderDAO {
     public static void main(String[] args) {

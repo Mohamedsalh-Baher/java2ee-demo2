@@ -9,7 +9,6 @@ import java.util.List;
 
 import static edu.kirkwood.shard.MySQL_Connect.getConnection;
 
-
 public class ProductDAO {
     public static void main(String[] args) {
         getProducts().forEach(System.out::println);

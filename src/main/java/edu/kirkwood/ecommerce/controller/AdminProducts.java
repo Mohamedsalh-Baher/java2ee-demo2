@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.controller;
-//
+
 import edu.kirkwood.ecommerce.model.Product;
 import edu.kirkwood.ecommerce.model.ProductDAO;
 import jakarta.servlet.ServletException;
@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(value = "/products")
+@WebServlet(value="/products")
 public class AdminProducts extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

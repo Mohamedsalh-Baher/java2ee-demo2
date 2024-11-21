@@ -1,5 +1,5 @@
 package edu.kirkwood.ecommerce.model;
-//
+
 public class Product {
     private String prod_id;
     private String prod_name;
@@ -8,9 +8,10 @@ public class Product {
     private String vend_id;
     private String vend_name;
 
-    public Product(String prod_id, String prod_name, double prod_price, String prod_desc, String vend_id, String vend_name) {
+    public Product() {
     }
-    // construct products for customer view
+
+    // Construct products for customer view
     public Product(String prod_id, String prod_name, double prod_price, String prod_desc) {
         this.prod_id = prod_id;
         this.prod_name = prod_name;
@@ -18,12 +19,11 @@ public class Product {
         this.prod_desc = prod_desc;
     }
 
-    public Product(String prod_desc, String prod_id, String prod_name, double prod_price, String vend_id, String vend_name) {
-
-        this.prod_desc = prod_desc;
+    public Product(String prod_id, String prod_name, double prod_price, String prod_desc, String vend_id, String vend_name) {
         this.prod_id = prod_id;
         this.prod_name = prod_name;
         this.prod_price = prod_price;
+        this.prod_desc = prod_desc;
         this.vend_id = vend_id;
         this.vend_name = vend_name;
     }
@@ -67,7 +67,7 @@ public class Product {
     public void setVend_id(String vend_id) {
         this.vend_id = vend_id;
     }
-
+//
     public String getVend_name() {
         return vend_name;
     }
